@@ -1,0 +1,29 @@
+# Node.js / NestJS Backend
+node_modules/
+dist/
+.env
+npm-debug.log
+yarn-error.log
+*.tsbuildinfo
+coverage/
+
+# ReactJS Frontend
+node_modules/
+build/
+.env
+npm-debug.log
+yarn-error.log
+coverage/
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln

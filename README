@@ -1,0 +1,48 @@
+# Book Management System
+
+## Technologies Used
+
+- **Backend:**
+
+  - NestJS
+  - TypeORM (for database management)
+
+- **Frontend:**
+
+  - ReactJS
+  - TailwindCSS (for styling)
+  - Axios (for making API requests)
+
+- **Database:**
+  - MySQL
+
+## Backend Setup
+
+-Create a .env file based on the .env.example file.
+-Configure the environment variables in the .env file, including your database connection details:
+-to install the required dependencies : npm install
+-To initialize the database schema : npm run migration:run (also revert the migration by using migration:revert insted of migration:run)
+-To start the server : npm run start:dev
+
+## Frontend Setup
+
+-Create a .env file based on the .env.example file.
+-npm install
+-npm start
+
+## API Endpoints
+
+to get all books with filtering:
+-GET /books?title=Harry&year=2021
+
+to post a new book
+-POST /books
+{
+"title": "The Great Gatsby",
+"author": "F. Scott Fitzgerald",
+"publishedDate": "1925-04-10",
+"description": "A novel set in the Jazz Age."
+}
+
+to delete a book
+DELETE /books/${id}
